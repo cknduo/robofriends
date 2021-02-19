@@ -4,7 +4,7 @@ class ErrorBoundary extends Component {
     constructor() {
         super();
         this.state = {
-            hasError = false
+            hasError: false
         }
     }
     
@@ -16,7 +16,7 @@ class ErrorBoundary extends Component {
         if (this.state.hasError) {
             return <h1>Opps. You broke it.</h1>
         } else {
-            this.props.children
+            return this.props.children
         }
     }
 }
